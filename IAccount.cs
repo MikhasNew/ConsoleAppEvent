@@ -12,9 +12,13 @@ namespace ConsoleAppEvent
         event AccountHandler AccountReplenishmentNotify;
         event AccountHandler AccountDebitingNotify;
 
-        int Sum { get; }
-        void Put(int sum);
-        void Take(int sum);
+        int AccauntID { get; }
+        AccountTips AccountTip {get;}
+        IClient Client { get; }
+        decimal Sum { get; }
+        void Put(decimal sum);
+        void Take(decimal sum);
+
 
 
     }

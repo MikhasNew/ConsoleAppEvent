@@ -9,9 +9,9 @@ namespace ConsoleAppEvent
     public class AccountEventArgs
     {
         public string Message { get; }
-        public int Sum { get; }
+        public decimal Sum { get; }
 
-        public AccountEventArgs(string mes, int sum)
+        public AccountEventArgs(string mes, decimal sum)
         {
             Message = mes;
             Sum = sum;
